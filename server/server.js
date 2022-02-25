@@ -6,10 +6,10 @@ const cors = require("cors");
 app.use(cors());
 
 app.use(express.json());
-const MongoClient = require('mongo').MongoClient;
+const MongoClient = require('mongodb').MongoClient;
 const createRouter = require('./helpers/create_router.js');
 
-MongoClient.connect('mongodb://localhost:27017', { useUnifiedTopology: true })
+MongoClient.connect('mongodb://0.0.0.0:27017', { useUnifiedTopology: true })
   .then((client) => {
     const db = client.db('emissions_calculator');
     const usersCollection = db.collection('users');
