@@ -1,9 +1,8 @@
 import {useState, useEffect} from 'react';
 import EmissionsForm from '../components/EmissionsForm';
-import './App.css';
 
 
-function App() {
+function AppContainer() {
 
 const [users, setUsers] = useState([]);
 
@@ -33,23 +32,12 @@ const updateUser = updatedUser => {
 
 
 return(
-    <div className='container'>
+    <div className='app-container'>
         <EmissionsForm addUser={createUser}/>
     </div>
 )
 
-
-
-export default App;
-
-
-
-
-
 };
 
-
-
-
-
+export default AppContainer;
 // addUser
