@@ -1,7 +1,7 @@
 use emissions_calculator;
 db.dropDatabase();
 
-db.usres.insertMany([
+db.users.insertMany([
   {
     "name": "Chris M",
     "travel": 1,
