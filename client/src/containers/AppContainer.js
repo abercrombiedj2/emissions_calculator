@@ -1,6 +1,7 @@
 import {useState, useEffect} from 'react';
 import EmissionsForm from '../components/EmissionsForm';
 import UserService from '../components/UserService';
+import UserList from '../components/UserList';
 
 
 function AppContainer() {
@@ -34,11 +35,10 @@ const deleteUser = idToDelete => {
 
 
 
-
-
 return(
     <div className='app-container'>
         <EmissionsForm addUser={createUser}/>
+        <UserList users={users} updateUser={updateUser} deleteUser={deleteUser}/>
     </div>
 )
 
