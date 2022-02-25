@@ -46,7 +46,7 @@ const createRouter = function (collection) {
         const updateData = req.body;
         collection.updateOne(
             {_id: ObjectID(id)},
-            {$set: updatedData}
+            {$set: updateData}
         )
         .then(result => res.json(result))
         .catch((err) => {
