@@ -27,6 +27,10 @@ const updateUser = updatedUser => {
     setUsers(updatedUsers); 
 };
 
+const deleteUser = idToDelete => {
+    UserService.deleteUser(idToDelete);
+    setUsers(users.filter(user => user._id !== idToDelete));
+};
 
 
 
@@ -41,4 +45,3 @@ return(
 };
 
 export default AppContainer;
-// addUser
