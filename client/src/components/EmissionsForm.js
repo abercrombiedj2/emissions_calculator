@@ -1,4 +1,5 @@
 import {useState} from 'react';
+import "../styles/StyleForm.css"
 
 const EmissionsForm = ({addUser}) => {
 
@@ -27,11 +28,12 @@ const EmissionsForm = ({addUser}) => {
     };
 
     return (
+        <div className='form-container'>
         <div className='emissions-form'>
             <form onSubmit={handleSubmit}>
                 <h1>New user</h1>
                 <div className='form-input'>
-                    <label htmlFor='name'>Name:</label>
+                    <label htmlFor='name'>Name: </label>
                     <input
                     type='text'
                     id='userName'
@@ -41,7 +43,7 @@ const EmissionsForm = ({addUser}) => {
                     onChange={handleUserNameChange} />
                 </div>
                 <div className='form-input'>
-                    <label htmlFor='travel'>Travel:</label>
+                    <label htmlFor='travel'>Travel: </label>
                     <input
                     type='number'
                     id='travel'
@@ -51,7 +53,7 @@ const EmissionsForm = ({addUser}) => {
                     onChange={handleTravelChange} />
                 </div>
                 <div className='form-input'>
-                    <label htmlFor='food'>Food:</label>
+                    <label htmlFor='food'>Food:  </label>
                     <input
                     type='number'
                     id='food'
@@ -61,7 +63,7 @@ const EmissionsForm = ({addUser}) => {
                     onChange={handleFoodChange} />
                 </div>
                 <div className='form-input'>
-                    <label htmlFor='home'>Home:</label>
+                    <label htmlFor='home'>Home: </label>
                     <input
                     type='number'
                     id='home'
@@ -75,6 +77,7 @@ const EmissionsForm = ({addUser}) => {
                 name='submit'
                 value='Save' />
             </form>
+        </div>
         </div>
     )
 };
