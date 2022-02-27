@@ -1,4 +1,7 @@
+import UserChart from "./UserChart";
+
 const UserCard = ({user, updateUser, deleteUser}) => {
+
 
     const handleDeleteUser = () => {
         deleteUser(user._id);
@@ -11,6 +14,7 @@ const UserCard = ({user, updateUser, deleteUser}) => {
             <p>{user.food}</p>
             <p>{user.home}</p>
             <button onClick={handleDeleteUser}> 🗑 </button>
+            <UserChart user={user} />
         </div>
     )
 };
