@@ -5,7 +5,7 @@ import HighchartsReact from 'highcharts-react-official';
 const UserChart = ({user}) => {
 
 
-const pieName = parseInt(user.userName);
+const pieName = user.userName;
 const pieTravel = parseInt(user.travel);
 const pieFood = parseInt(user.food);
 const pieHome = parseInt(user.home);
