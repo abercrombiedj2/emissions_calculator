@@ -6,9 +6,13 @@ const UserChart = ({user}) => {
 
 
 const pieName = user.userName;
-const pieTravel = parseInt(user.travel);
+const pieLandTravel = parseInt(user.landTravel);
+const pieAirTravel = parseInt(user.airTravel);
 const pieFood = parseInt(user.food);
-const pieHome = parseInt(user.home);
+const pieLifestyle = parseInt(user.lifestyle);
+const pieElectricity = parseInt(user.electricity);
+const pieGas = parseInt(user.gas);
+const pieTotal = parseInt(user.total);
 
  const options = {
      chart: {
@@ -28,17 +32,30 @@ const pieHome = parseInt(user.home);
        type: 'pie',
        name: pieName,
        data: [{
-           name: 'Travel',
-           y: pieTravel
+           name: 'Land Travel',
+           y: pieLandTravel
+         },
+         {
+           name: 'Air Travel',
+           y: pieAirTravel
          },
          {
            name: 'Food',
            y: pieFood
          },
          {
-           name: 'Home',
-           y: pieHome
-         }
+           name: 'Lifestyle',
+           y: pieLifestyle
+         },
+         {
+           name: 'Electricity',
+           y: pieElectricity
+         },
+         {
+           name: 'Gas',
+           y: pieGas
+         },
+         
        ]
    }]
    };

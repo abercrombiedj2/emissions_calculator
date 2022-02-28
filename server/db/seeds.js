@@ -4,26 +4,43 @@ db.dropDatabase();
 db.users.insertMany([
   {
     "userName": "Chris M",
-    "travel": 1,
+    "landTravel": 6,
+    "airTravel": 1,
     "food": 4,
-    "home": 5
+    "lifestyle": 5,
+    "electricity": 3,
+    "gas": 2,
+    "total": 3
   },
   {
-    "userName": "David B",
-    "travel": 3,
-    "food": 7,
-    "home": 2
-  },
-  {
-    "userName": "Paola G",
-    "travel": 7,
-    "food": 8,
-    "home": 3
-  },
-  {
-    "userName": "David A",
-    "travel": 3,
+    "userName": "Chris M",
+    "landTravel": 5,
+    "airTravel": 1,
     "food": 4,
-    "home": 9
-  }
+    "lifestyle": 5,
+    "electricity": 3,
+    "gas": 2,
+    "total": 3
+  },
+  {
+    "userName": "Chris M",
+    "landTravel": 7,
+    "airTravel": 1,
+    "food": 4,
+    "lifestyle": 5,
+    "electricity": 3,
+    "gas": 2,
+    "total": 3
+  },
+  {
+    "userName": "Chris M",
+    "landTravel": 6,
+    "airTravel": 1,
+    "food": 4,
+    "lifestyle": 5,
+    "electricity": 3,
+    "gas": 2,
+    "total": 3
+  },
+  
 ]);

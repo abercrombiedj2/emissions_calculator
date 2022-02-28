@@ -52,7 +52,8 @@ const EmissionsForm = ({addUser}) => {
             food: food,
             lifestyle: lifestyle,
             electricity: electricity,
-            gas: gas
+            gas: gas,
+            total: total
         });
         setUserName('');
         setLandTravel(0);
