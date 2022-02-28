@@ -22,7 +22,7 @@ const EmissionsForm = ({addUser}) => {
     };
 
     const handleFoodChange = event => {
-        const foodEmissions = parseInt(event.target.value) * 0.4;
+        const foodEmissions = parseInt(event.target.value);
         setFood(foodEmissions);
     };
 
@@ -43,8 +43,9 @@ const EmissionsForm = ({addUser}) => {
 
     const handleSubmit = event => {
         event.preventDefault();
-        const totalEmissions = landTravel + airTravel + food + lifestyle + electricity + gas;
-        setTotal(totalEmissions);
+        let totalEmissions = 0
+        totalEmissions = landTravel + airTravel + food + lifestyle + electricity + gas;
+        setTotal(totalEmissions)
         addUser({
             userName: userName,
             landTravel: landTravel,
@@ -53,17 +54,10 @@ const EmissionsForm = ({addUser}) => {
             lifestyle: lifestyle,
             electricity: electricity,
             gas: gas,
-            total: total
+            total: totalEmissions
         });
-        setUserName('');
-        setLandTravel(0);
-        setAirTravel(0);
-        setFood(0);
-        setLifestyle(0);
-        setElectricity(0);
-        setGas(0);
     };
-
+    
     return (
         <div className='form-container'>
         <div className='emissions-form'>
@@ -150,7 +144,6 @@ const EmissionsForm = ({addUser}) => {
                 value='Save' />
             </form>
         </div>
-        <h3>Your carbon footprint is: {total} tonnes.</h3>
         </div>
     )
 };
