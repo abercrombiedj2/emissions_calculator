@@ -5,6 +5,7 @@ import NavBar from '../components/NavBar';
 import UserCard from '../components/UserCard';
 import UserList from '../components/UserList';
 import EmissionsForm from '../components/EmissionsForm';
+import LandingPage from '../components/LandingPage';
 
 function AppContainer() {
 
