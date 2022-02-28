@@ -1,4 +1,5 @@
 import UserChart from "./UserChart";
+import CardFoot from "./CardFoot";
 
 const UserCard = ({user, updateUser, deleteUser}) => {
 
@@ -20,6 +21,7 @@ const UserCard = ({user, updateUser, deleteUser}) => {
             <button onClick={handleDeleteUser}> 🗑 </button>
             {/* <button onClick={handleEditUser}></button> */}
             <UserChart user={user} />
+            <CardFoot />
         </div>
     )
 };
