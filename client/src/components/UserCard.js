@@ -9,11 +9,16 @@ const UserCard = ({user, updateUser, deleteUser}) => {
 
     return (
         <div className='user-card'>
-            <h2>{user.userName}</h2>
-            <p>{user.travel}</p>
-            <p>{user.food}</p>
-            <p>{user.home}</p>
+            <h2>Name: {user.userName}</h2>
+            <p>Land travel: {user.landTravel} tonnes</p>
+            <p>Air travel: {user.airTravel} tonnes</p>
+            <p>Food: {user.food} tonnes</p>
+            <p>Lifestyle: {user.lifestyle} tonnes</p>
+            <p>Electricity: {user.electricity} tonnes</p>
+            <p>Gas: {user.gas} tonnes</p>
+            <p>Total emissions: {user.total} tonnes</p>
             <button onClick={handleDeleteUser}> 🗑 </button>
+            {/* <button onClick={handleEditUser}></button> */}
             <UserChart user={user} />
         </div>
     )
