@@ -1,7 +1,6 @@
 import {useState, useEffect} from 'react';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import UserService from '../components/UserService';
-
 import NavBar from '../components/NavBar';
 import UserCard from '../components/UserCard';
 import UserList from '../components/UserList';
@@ -39,6 +38,7 @@ const deleteUser = idToDelete => {
 
 
 return(
+
     // <div className='app-container'>
     //     <NavBar />
     //     <EmissionsForm addUser={createUser}/>
@@ -60,6 +60,7 @@ return(
             </Switch>
         </>
     </Router>
+
 )
 
 };
