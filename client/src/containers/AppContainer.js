@@ -3,6 +3,7 @@ import EmissionsForm from '../components/EmissionsForm';
 import UserService from '../components/UserService';
 import UserList from '../components/UserList';
 import NavBar from '../components/NavBar';
+import LandingPage from '../components/LandingPage';
 
 
 
@@ -41,6 +42,7 @@ const deleteUser = idToDelete => {
 return(
     <div className='app-container'>
         <NavBar />
+        <LandingPage/>
         <EmissionsForm addUser={createUser}/>
         <UserList users={users} updateUser={updateUser} deleteUser={deleteUser}/>
     </div>
