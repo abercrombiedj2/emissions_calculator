@@ -13,9 +13,9 @@ function NavBar() {
         <header>
             <h3>E.mission</h3>
             <nav ref={navRef}>
-                <a href="/#">Home</a>
-                <a href="/#">You</a>
-                <a href="/#">Compare</a>
+                <a href="/home">Home</a>
+                <a href="/user">You</a>
+                <a href="/userlist">Compare</a>
                 <a href="/#">Learn More</a>
                 <button className="nav-btn nav-close-btn" onClick={showNavBar}>
                     <FaTimes/>
