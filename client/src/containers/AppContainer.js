@@ -2,7 +2,6 @@ import {useState, useEffect} from 'react';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import UserService from '../components/UserService';
 import NavBar from '../components/NavBar';
-import UserCard from '../components/UserCard';
 import UserList from '../components/UserList';
 import EmissionsForm from '../components/EmissionsForm';
 import LandingPage from '../components/LandingPage';
@@ -51,7 +50,6 @@ return(
             <Switch>
                 <Route exact path='/' component={LandingPage} />
                 <Route path='/home' component={LandingPage} />
-                <Route path='/user' component={UserCard} />
                 <Route path='/userlist' exact
                 render={() => <UserList users={users} updateUser={updateUser} deleteUser={deleteUser}/>}
                 />
