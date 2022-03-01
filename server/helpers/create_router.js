@@ -45,7 +45,9 @@ const createRouter = function (collection) {
         const id = req.params.id;
         const updateData = req.body;
 
+
         delete updateData._id;
+
 
         collection.updateOne(
             {_id: ObjectID(id)},

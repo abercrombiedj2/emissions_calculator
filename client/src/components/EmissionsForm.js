@@ -79,6 +79,7 @@ const EmissionsForm = ({addUser}) => {
                     name='land-travel'
                     id='land-travel'
                     onChange={handleLandTravelChange}>
+                    <option value=''>Select a mode of transport</option>
                     <option value='4'>Car</option>
                     <option value='3'>Motorbike</option>
                     <option value='1'>Train</option>
