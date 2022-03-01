@@ -1,0 +1,46 @@
+/* .item-link {
+    font-size: 100px;
+
+} */
+
+.landing-page {
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+
+    
+}
+
+
+.landing-h1 {
+    padding-left: 10rem;
+    padding-right: 4rem;
+    font-size: 4vh;
+    
+
+}
+
+.landing-h2 {
+    padding-right: 6rem;
+    text-align: right;
+    
+
+}
+.tree-icon {
+    max-width: 3rem;
+}
+
+.button-div {
+    align-items: center;
+}
+
+.landing-page-button {
+    height: 100px;
+    width: 30rem;
+}
+
+
+
+/* .counter-div {
+    font-size: ;
+} */
