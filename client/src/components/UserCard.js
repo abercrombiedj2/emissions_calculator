@@ -1,4 +1,6 @@
 import UserChart from "./UserChart";
+import { FaTrash, FaEdit} from "react-icons/fa";
+import CardFoot from "./ChartFoot";
 
 import "../stylesheets/UsersCards.css";
 
