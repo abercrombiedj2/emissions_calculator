@@ -23,7 +23,7 @@ return (
         </div>
         <div className='counter-div'>
             <p>
-        <iframe title='Tons of CO2 emitted into the atmosphere' src='https://www.theworldcounts.com/embed/challenges/23?background_color=rgb(48, 158, 136)&color=black&font_family=%22Helvetica+Neue%22%2C+Arial%2C+sans-serif&font_size=20'></iframe>
+        <iframe title='Tons of CO2 emitted into the atmosphere' src='https://www.theworldcounts.com/embed/challenges/23?background_color=rgb(48, 158, 136)&color=white&font_family=%22Helvetica+Neue%22%2C+Arial%2C+sans-serif&font_size=20'></iframe>
         </p>
         </div>
         {/* <img src='../stylesheets/images/leaf.png' alt='Green leaf'></img> */}
