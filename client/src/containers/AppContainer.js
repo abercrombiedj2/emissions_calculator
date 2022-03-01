@@ -23,13 +23,14 @@ const createUser = newUser => {
     .then(savedUser => setUsers([ ...users, savedUser]));
 };
 
-const updateUser = updatedUser => {
+const updateUser = (updatedUser) => {
+    console.log(updatedUser);
     UserService.updateUser(updatedUser);
     
     const updatedUserIndex = users.findIndex(user => user._id === updatedUser._id);
     const updatedUsers = [...users];
     updatedUsers[updatedUserIndex] = updatedUser;
-    setUsers(updatedUsers); 
+    setUsers(updatedUsers);
 };
 
 const deleteUser = idToDelete => {
