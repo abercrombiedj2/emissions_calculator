@@ -19,6 +19,7 @@ const pieTotal = parseInt(user.total);
  const options = {
      chart: {
        renderTo: 'container',
+       backgroundColor: { fill: 'transparent'},
        type: 'pie'
    },
    title: {
