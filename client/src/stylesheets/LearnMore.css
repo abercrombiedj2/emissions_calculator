@@ -1,0 +1,30 @@
+.learn-moreh1{
+    color: rgb(48, 158, 136);
+    text-align:center;
+    margin: 30px;
+    
+}
+.learn-moreh2{
+    color: rgb(48, 158, 136);
+    text-align:center;
+}
+
+li {
+    text-decoration: none;
+    list-style-type: circle;
+}
+
+.learn-more1 {
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px rgb(68, 67, 67);
+    margin: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: rgb(242, 242, 242);
+    align-items: center;
+    min-width: 40%;
+
+}
