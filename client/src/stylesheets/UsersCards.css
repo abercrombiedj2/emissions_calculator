@@ -1,0 +1,33 @@
+.user-card {
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px rgb(68, 67, 67);
+    margin: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: rgb(242, 242, 242);
+    align-items: center;
+    min-width: 40%;
+}
+
+.user-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap-reverse;
+}
+
+.user-chart::before {
+    display: flex;
+    height: 400px !important;
+    width: 400px !important; 
+    min-width: 20%;
+    
+}  
+
+
+
+
+
+ 
