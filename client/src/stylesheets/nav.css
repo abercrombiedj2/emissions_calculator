@@ -6,7 +6,7 @@
 }
 
 :root {
-    --mainColor:rgb(48, 189, 161);
+    --mainColor:rgb(48, 158, 136);
     --textColor: white;
     
 }
@@ -20,6 +20,7 @@ header {
     background-color: var(--mainColor);
     color: var(--textColor)
 }
+
 
 nav a{
     margin: 0 2rem;

@@ -1,6 +1,7 @@
 import UserChart from "./UserChart";
-import {FaTrash, FaEdit} from 'react-icons/fa';
-import CardFoot from './ChartFoot';
+
+import "../stylesheets/UsersCards.css";
+
 
 const UserCard = ({user, updateUser, deleteUser, onUserClick}) => {
 
@@ -11,7 +12,9 @@ const UserCard = ({user, updateUser, deleteUser, onUserClick}) => {
 
     return (
         <div className='user-card'>
-            <h2 onClick={handleUserClick}>User: {user.userName}</h2>
+
+            <h2>{user.userName}</h2>
+
             <p>Land travel: {user.landTravel} tonnes</p>
             <p>Air travel: {user.airTravel} tonnes</p>
             <p>Food: {user.food} tonnes</p>
