@@ -25,7 +25,6 @@ const createUser = newUser => {
 };
 
 const updateUser = (updatedUser) => {
-    console.log(updatedUser);
     UserService.updateUser(updatedUser);
     
     const updatedUserIndex = users.findIndex(user => user._id === updatedUser._id);
