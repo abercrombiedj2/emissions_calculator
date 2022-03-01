@@ -23,7 +23,7 @@ const pieTotal = parseInt(user.total);
        type: 'pie'
    },
    title: {
-       text: 'Emissions'
+       text: ''
    },
    yAxis: {
        title: {
