@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { FaBars, FaTimes, FaHome, FaCalculator, FaUsers, FaInfoCircle } from "react-icons/fa";
 import "../stylesheets/nav.css";
 
 function NavBar() {
@@ -13,10 +13,10 @@ function NavBar() {
         <header>
             <h3>E.mission</h3>
             <nav ref={navRef}>
-                <a href="/home">Home</a>
-                <a href="/emissionsform">Get Started</a>
-                <a href="/userlist">Compare</a>
-                <a href="/#">Learn More</a>
+                <a href="/home"><FaHome/> Home</a>
+                <a href="/emissionsform"><FaCalculator/> Calculator</a>
+                <a href="/userlist"><FaUsers/> Users</a>
+                <a href="/#"><FaInfoCircle/> Learn More</a>
                 <button className="nav-btn nav-close-btn" onClick={showNavBar}>
                     <FaTimes/>
                 </button>
