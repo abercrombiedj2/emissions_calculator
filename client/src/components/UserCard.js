@@ -1,15 +1,16 @@
 import UserChart from "./UserChart";
+import {FaTrash, FaEdit} from 'react-icons/fa'
 
-const UserCard = ({user, updateUser, deleteUser}) => {
+const UserCard = ({user, updateUser, deleteUser, onUserClick}) => {
 
 
-    const handleDeleteUser = () => {
-        deleteUser(user._id);
-    }
+    const handleDeleteUser = () => deleteUser(user._id);
+
+    const handleUserClick = () => onUserClick(user);
 
     return (
         <div className='user-card'>
-            <h2>Name: {user.userName}</h2>
+            <h2 onClick={handleUserClick}>User: {user.userName}</h2>
             <p>Land travel: {user.landTravel} tonnes</p>
             <p>Air travel: {user.airTravel} tonnes</p>
             <p>Food: {user.food} tonnes</p>
@@ -17,8 +18,8 @@ const UserCard = ({user, updateUser, deleteUser}) => {
             <p>Electricity: {user.electricity} tonnes</p>
             <p>Gas: {user.gas} tonnes</p>
             <p>Total emissions: {user.total} tonnes</p>
-            <button onClick={handleDeleteUser}> 🗑 </button>
-            {/* <button onClick={handleEditUser}></button> */}
+            <button onClick={handleDeleteUser}> <FaTrash/> </button>
+            <button value={user} onClick={handleUserClick}><FaEdit/></button>
             <UserChart user={user} />
         </div>
     )
