@@ -1,5 +1,5 @@
 import {useState} from 'react';
-import "../stylesheets/EmissionsForm.css"
+import "../stylesheets/Forms.css"
 
 const EmissionsForm = ({addUser}) => {
 
@@ -56,30 +56,28 @@ const EmissionsForm = ({addUser}) => {
             gas: gas,
             total: totalEmissions
         });
+        window.location.href='/userlist';
     };
     
     return (
-        <div className='form-container'>
-        <div className='emissions-form'>
-            <form onSubmit={handleSubmit}>
-                <h1>New user</h1>
+            <form onSubmit={handleSubmit} className='form'>
+                <h1 id='form-header'>Emission Questionnaire</h1>
                 <div className='form-input'>
-                    <label htmlFor='name'>Name: </label>
                     <input
                     type='text'
-                    id='userName'
+                    className='input'
                     name='userName'
                     value={userName}
+                    placeholder='Enter your name'
                     required
                     onChange={handleUserNameChange} />
                 </div>
                 <div className='form-input'>
-                    <label htmlFor='land-travel'>How do you normally travel?</label>
                     <select
                     name='land-travel'
-                    id='land-travel'
+                    className='input'
                     onChange={handleLandTravelChange}>
-                    <option value=''>Select a mode of transport</option>
+                    <option value='' disabled selected>How do you normally travel?</option>
                     <option value='4'>Car</option>
                     <option value='3'>Motorbike</option>
                     <option value='1'>Train</option>
@@ -91,50 +89,50 @@ const EmissionsForm = ({addUser}) => {
                     </select>
                 </div>
                 <div className='form-input'>
-                    <label htmlFor='air-travel'>How many return flights have you taken in the last twelve months?</label>
                     <input
                     type='number'
-                    id='air-travel'
+                    className='input'
                     name='air-travel'
+                    placeholder='Flights this year?'
                     required
                     onChange={handleAirTravelChange} />
                 </div>
                 <div className='form-input'>
-                    <label htmlFor='food'>How many meals per week do you eat containing meat?</label>
                     <input
                     type='number'
-                    id='food'
+                    className='input'
                     name='food'
+                    placeholder='Meals with meat?'
                     required
                     onChange={handleFoodChange} />
                 </div>
                 <div className='form-input'>
-                    <label htmlFor='lifestyle'>How much do you spend on clothes, health and beauty products each month?</label>
                     <select
                     name='lifestyle'
-                    id='lifestyle'
+                    className='input'
                     onChange={handleLifestyleChange}>
-                    <option value='1'>Less than £50</option>
-                    <option value='2'>Less than £100</option>
-                    <option value='3'>More than £100</option>
+                    <option value='' disabled selected>Spending on clothes & products?</option>
+                    <option value='1'>Less than £50 per month</option>
+                    <option value='2'>Less than £100 per month</option>
+                    <option value='3'>More than £100 per month</option>
                     </select>
                 </div>
                 <div className='form-input'>
-                    <label htmlFor='electricity'>Is your electricity from renewable sources?</label>
                     <select
                     name='electricity'
-                    id='electricity'
+                    className='input'
                     onChange={handleElectricityChange}>
+                    <option value='' disabled selected>Electricity from renewable sources?</option>
                     <option value='0'>Yes</option>
                     <option value='1'>No</option>
                     </select>
                 </div>
                 <div className='form-input'>
-                    <label htmlFor='gas'>Is your gas carbon neutral?</label>
                     <select
                     name='gas'
-                    id='gas'
+                    className='input'
                     onChange={handleGasChange}>
+                    <option value='' disabled selected>Gas carbon neutral?</option>
                     <option value='0'>Yes</option>
                     <option value='1'>No</option>
                     </select>
@@ -142,10 +140,9 @@ const EmissionsForm = ({addUser}) => {
                 <input
                 type='submit'
                 name='submit'
+                id='save'
                 value='Save' />
             </form>
-        </div>
-        </div>
     )
 };
 
