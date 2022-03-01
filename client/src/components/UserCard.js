@@ -1,4 +1,5 @@
 import UserChart from "./UserChart";
+import "../stylesheets/UsersCards.css";
 
 const UserCard = ({user, updateUser, deleteUser}) => {
 
@@ -9,7 +10,7 @@ const UserCard = ({user, updateUser, deleteUser}) => {
 
     return (
         <div className='user-card'>
-            <h2>Name: {user.userName}</h2>
+            <h2>{user.userName}</h2>
             <p>Land travel: {user.landTravel} tonnes</p>
             <p>Air travel: {user.airTravel} tonnes</p>
             <p>Food: {user.food} tonnes</p>
