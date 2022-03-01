@@ -16,7 +16,7 @@ function NavBar() {
                 <a href="/home"><FaHome/> Home</a>
                 <a href="/emissionsform"><FaCalculator/> Calculator</a>
                 <a href="/userlist"><FaUsers/> Users</a>
-                <a href="/#"><FaInfoCircle/> Learn More</a>
+                <a href="/learnmore"><FaInfoCircle/> Learn More</a>
                 <button className="nav-btn nav-close-btn" onClick={showNavBar}>
                     <FaTimes/>
                 </button>

@@ -7,6 +7,7 @@ import UserList from '../components/UserList';
 import EmissionsForm from '../components/EmissionsForm';
 import LandingPage from '../components/LandingPage';
 import UpdateForm from '../components/UpdateForm';
+import LearnMore from '../components/LearnMore';
 
 function AppContainer() {
 
@@ -56,6 +57,9 @@ return(
                 />
                 <Route path='/updateform' exact
                 render={() => <UpdateForm />}
+                />
+                <Route path='/learnmore' exact
+                render={() => <LearnMore />}
                 />
             </Switch>
         </>
