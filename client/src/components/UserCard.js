@@ -1,5 +1,6 @@
 import UserChart from "./UserChart";
-import {FaTrash, FaEdit} from 'react-icons/fa'
+import {FaTrash, FaEdit} from 'react-icons/fa';
+import CardFoot from './ChartFoot';
 
 const UserCard = ({user, updateUser, deleteUser, onUserClick}) => {
 
@@ -21,6 +22,8 @@ const UserCard = ({user, updateUser, deleteUser, onUserClick}) => {
             <button onClick={handleDeleteUser}> <FaTrash/> </button>
             <button value={user} onClick={handleUserClick}><FaEdit/></button>
             <UserChart user={user} />
+            <CardFoot user={user} />
+            
         </div>
     )
 };
