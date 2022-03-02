@@ -77,7 +77,7 @@ const EmissionsForm = ({addUser}) => {
                     name='land-travel'
                     className='input'
                     onChange={handleLandTravelChange}>
-                    <option value='' disabled selected>How do you normally travel?</option>
+                    <option value='' disabled selected>How do you normally get around?</option>
                     <option value='4'>Car</option>
                     <option value='3'>Motorbike</option>
                     <option value='1'>Train</option>
