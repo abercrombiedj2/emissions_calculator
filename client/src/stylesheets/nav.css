@@ -11,6 +11,17 @@
     
 }
 
+.logo {
+    font-family: 'Unica One', cursive;
+    font-size: 3rem;
+    text-shadow: 2px 2px 2px black;
+    letter-spacing: 5px;
+}
+
+#e {
+    font-size: 4rem;
+}
+
 header {
     display: flex;
     align-items: center;
