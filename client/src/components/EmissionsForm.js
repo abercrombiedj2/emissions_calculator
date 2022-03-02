@@ -61,7 +61,7 @@ const EmissionsForm = ({addUser}) => {
     
     return (
             <form onSubmit={handleSubmit} className='form'>
-                <h1 id='form-header'>Emission Questionnaire</h1>
+                <h1 id='form-header'>E.mission Questionnaire</h1>
                 <div className='form-input'>
                     <input
                     type='text'

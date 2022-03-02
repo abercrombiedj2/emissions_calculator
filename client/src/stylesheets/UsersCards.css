@@ -23,9 +23,12 @@
     height: 400px !important;
     width: 400px !important; 
     min-width: 20%;
-    
 }  
 
+.button-link {
+    font-size: 4vh;
+    text-decoration: none;
+}
 
 
 

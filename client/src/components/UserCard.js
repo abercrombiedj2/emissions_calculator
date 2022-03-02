@@ -1,6 +1,8 @@
 import UserChart from "./UserChart";
 import { FaTrash, FaEdit} from "react-icons/fa";
 import CardFoot from "./ChartFoot";
+import CountUp from 'react-countup';
+
 
 import "../stylesheets/UsersCards.css";
 
@@ -17,13 +19,13 @@ const UserCard = ({user, updateUser, deleteUser, onUserClick}) => {
 
             <h2>{user.userName}</h2>
 
-            <p>Land travel: {user.landTravel} tonnes</p>
-            <p>Air travel: {user.airTravel} tonnes</p>
-            <p>Food: {user.food} tonnes</p>
-            <p>Lifestyle: {user.lifestyle} tonnes</p>
-            <p>Electricity: {user.electricity} tonnes</p>
-            <p>Gas: {user.gas} tonnes</p>
-            <p>Total emissions: {user.total} tonnes</p>
+            <p>Land travel: {user.landTravel} tons</p>
+            <p>Air travel: {user.airTravel} tons</p>
+            <p>Food: {user.food} tons</p>
+            <p>Lifestyle: {user.lifestyle} tons</p>
+            <p>Electricity: {user.electricity} tons</p>
+            <p>Gas: {user.gas} tons</p>
+            <p className="counter-number">Total emissions: <CountUp className="counter-number"end={user.total} duration={2} /> tons</p>
             <button onClick={handleDeleteUser}> <FaTrash/> </button>
             <button value={user} onClick={handleUserClick}><FaEdit/></button>
             <UserChart user={user} />

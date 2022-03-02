@@ -11,7 +11,7 @@ function NavBar() {
 
     return (
         <header>
-            <h3>E.mission</h3>
+            <h3 className='logo'><span id='e'>E.</span>mission</h3>
             <nav ref={navRef}>
                 <a href="/home"><FaHome/> Home</a>
                 <a href="/emissionsform"><FaCalculator/> Calculator</a>

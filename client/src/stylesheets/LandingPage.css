@@ -31,16 +31,30 @@
 }
 
 .button-div {
-    align-items: center;
+    padding-left: 10rem;
+    padding-top: 2rem;
 }
 
 .landing-page-button {
+    background-color: rgba(232, 161, 74, 0.988);
     height: 100px;
     width: 30rem;
 }
 
+a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+.counter-number {
+    font-size: 3vh;
+}
 
 
-/* .counter-div {
-    font-size: ;
-} */
+
+.counter-div {
+    padding-top: 6rem;
+    margin-left: auto;
+    margin-right: auto;
+   
+} 

@@ -6,7 +6,7 @@ const LearnMore = () => {
     return (
 
         <div className= 'learn-more'>
-            <h1 className='learn-moreh1'>What can we do to reduce our CO2 footprint?</h1>
+            <h1 className='learn-moreh1'>Tips to reduce your carbon footprint?</h1>
             <div className='learn-more1'>
             <h2 className='learn-moreh2'>Food</h2>
             <ul>
