@@ -1,17 +1,19 @@
 .learn-moreh1{
-    color: rgb(48, 158, 136);
+    color: black;
     text-align:center;
     margin: 30px;
     
 }
 .learn-moreh2{
-    color: rgb(48, 158, 136);
+    color: black;
     text-align:center;
+    padding-bottom: 2vh;
 }
 
 li {
-    text-decoration: none;
-    list-style-type: circle;
+    display: flex;
+    line-height: 4vh;
+    
 }
 
 .learn-more1 {
@@ -25,6 +27,14 @@ li {
     justify-content: space-around;
     background: rgb(242, 242, 242);
     align-items: center;
+    width: 60%;
     min-width: 40%;
+    text-align: center;
 
+}
+
+.learn-more {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
