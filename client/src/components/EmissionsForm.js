@@ -93,7 +93,7 @@ const EmissionsForm = ({addUser}) => {
                     type='number'
                     className='input'
                     name='air-travel'
-                    placeholder='Flights this year?'
+                    placeholder='How many return flights this year?'
                     required
                     onChange={handleAirTravelChange} />
                 </div>
@@ -102,7 +102,7 @@ const EmissionsForm = ({addUser}) => {
                     type='number'
                     className='input'
                     name='food'
-                    placeholder='Meals with meat?'
+                    placeholder='How many meals per week with meat?'
                     required
                     onChange={handleFoodChange} />
                 </div>
@@ -111,7 +111,7 @@ const EmissionsForm = ({addUser}) => {
                     name='lifestyle'
                     className='input'
                     onChange={handleLifestyleChange}>
-                    <option value='' disabled selected>Spending on clothes & products?</option>
+                    <option value='' disabled selected>Amount you spend on clothes & products</option>
                     <option value='1'>Less than £50 per month</option>
                     <option value='2'>Less than £100 per month</option>
                     <option value='3'>More than £100 per month</option>
@@ -122,7 +122,7 @@ const EmissionsForm = ({addUser}) => {
                     name='electricity'
                     className='input'
                     onChange={handleElectricityChange}>
-                    <option value='' disabled selected>Electricity from renewable sources?</option>
+                    <option value='' disabled selected>Is your electricity renewably sourced?</option>
                     <option value='0'>Yes</option>
                     <option value='1'>No</option>
                     </select>
@@ -132,7 +132,7 @@ const EmissionsForm = ({addUser}) => {
                     name='gas'
                     className='input'
                     onChange={handleGasChange}>
-                    <option value='' disabled selected>Gas carbon neutral?</option>
+                    <option value='' disabled selected>Is your gas carbon neutral?</option>
                     <option value='0'>Yes</option>
                     <option value='1'>No</option>
                     </select>
