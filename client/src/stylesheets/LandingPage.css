@@ -46,7 +46,9 @@ a:visited {
     color: white;
 }
 
-
+.counter-number {
+    font-size: 3vh;
+}
 
 
 
