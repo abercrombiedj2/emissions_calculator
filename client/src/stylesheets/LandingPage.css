@@ -12,10 +12,11 @@
 }
 
 
-.landing-h1 {
+.quote {
     padding-left: 10rem;
     padding-right: 4rem;
     font-size: 4vh;
+    width: 45%;
     
 
 }
@@ -27,7 +28,7 @@
 
 }
 .tree-icon {
-    max-width: 3rem;
+    max-width: 50%;
 }
 
 .button-div {
