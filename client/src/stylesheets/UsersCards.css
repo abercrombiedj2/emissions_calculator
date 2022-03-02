@@ -30,7 +30,36 @@
     text-decoration: none;
 }
 
+.card-foot{
+    display: flex;
+    flex-direction: row;
+}
 
+.btn-trash, .btn-edit {
+    padding: 5px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: transparent;
+}
 
+.btn-container {
+    display: flex;
+    flex-direction: row;
+}
 
- 
+.btn-trash {
+    color: crimson;
+    font-size: 2.7vh;
+}
+
+.btn-edit {
+    color: deepskyblue;
+    font-size: 3.1vh;
+
+}
+
+.counter-number {
+    font-size: 3vh;
+    font-weight: bold;
+}
