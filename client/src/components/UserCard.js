@@ -26,8 +26,10 @@ const UserCard = ({user, updateUser, deleteUser, onUserClick}) => {
             <p>Electricity: {user.electricity} tons</p>
             <p>Gas: {user.gas} tons</p>
             <p className="counter-number">Total emissions: <CountUp className="counter-number"end={user.total} duration={2} /> tons</p>
-            <button onClick={handleDeleteUser}> <FaTrash/> </button>
-            <button value={user} onClick={handleUserClick}><FaEdit/></button>
+            <div className="btn-container">
+            <button className="btn-trash" onClick={handleDeleteUser}> <FaTrash/> </button>
+            <button className="btn-edit" value={user} onClick={handleUserClick}><FaEdit/></button>
+            </div>
             <UserChart user={user} />
             <CardFoot user={user} />
             

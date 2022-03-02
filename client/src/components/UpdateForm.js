@@ -55,7 +55,7 @@ const UpdateForm = ({user, updateUser}) => {
                     name='new-land-travel'
                     className='input'
                     onChange={handleNewLandTravel}>
-                    <option value='' disabled selected>How do you normally travel?</option>
+                    <option value='' disabled selected>How do you normally get around?</option>
                     <option value=''>Select a mode of transport</option>
                     <option value='4'>Car</option>
                     <option value='3'>Motorbike</option>
@@ -72,7 +72,7 @@ const UpdateForm = ({user, updateUser}) => {
                     type='number'
                     className='input'
                     name='new-air-travel'
-                    placeholder='Flights this year?'
+                    placeholder='How many return flights this year?'
                     required
                     onChange={handleNewAirTravel} />
                 </div>
@@ -81,7 +81,7 @@ const UpdateForm = ({user, updateUser}) => {
                     type='number'
                     className='input'
                     name='new-food'
-                    placeholder='Meals with meat?'
+                    placeholder='How many meals per week with meat?'
                     required
                     onChange={handleNewFood} />
                 </div>
@@ -90,7 +90,7 @@ const UpdateForm = ({user, updateUser}) => {
                     name='new-lifestyle'
                     className='input'
                     onChange={handleNewLifestyle}>
-                    <option value='' disabled selected>Spending on clothes & products?</option>
+                    <option value='' disabled selected>Amount you spend on clothes & products</option>
                     <option value='1'>Less than £50 per month</option>
                     <option value='2'>Less than £100 per month</option>
                     <option value='3'>More than £100 per month</option>
@@ -101,7 +101,7 @@ const UpdateForm = ({user, updateUser}) => {
                     name='new-electricity'
                     className='input'
                     onChange={handleNewElectricity}>
-                    <option value='' disabled selected>Electricity from renewable sources?</option>
+                    <option value='' disabled selected>Is your electricity renewably sourced?</option>
                     <option value='0'>Yes</option>
                     <option value='1'>No</option>
                     </select>
@@ -111,7 +111,7 @@ const UpdateForm = ({user, updateUser}) => {
                     name='new-gas'
                     className='input'
                     onChange={handleNewGas}>
-                    <option value='' disabled selected>Gas carbon neutral?</option>
+                    <option value='' disabled selected>Is your gas carbon neutral?</option>
                     <option value='0'>Yes</option>
                     <option value='1'>No</option>
                     </select>
